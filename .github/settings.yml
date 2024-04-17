@@ -6,6 +6,7 @@ repository:
             status: enabled
 
     has_issues: true
+    has_discussions: true
     has_projects: true
     has_wiki: true
     has_downloads: true
