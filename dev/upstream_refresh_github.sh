@@ -19,17 +19,12 @@ if [ -z "${SED}" ]; then
     exit 1;
 fi
 
-# Determine Repo Slug
+# Determine repo slug.
 CURRENT_REPO=$(git remote get-url --push origin | sed 's/.*.com\///' | sed 's/.*.com//' | sed 's/://' | sed 's/.git//')
 
 # Call gh_settings_sync from main mod.ts.
 $DENO cache -r https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/mod.ts
-$DENO run \
-    --allow-net \
-    --allow-env \
-    --allow-read \
-    --allow-sys \
-    --allow-write=/tmp/ \
+$DENO run -A \
     https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/mod.ts \
     -T "$GH_ACCESS_TOKEN" \
     -R "$CURRENT_REPO" \

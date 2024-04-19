@@ -1,15 +1,17 @@
 daysUntilStale: 14
 daysUntilClose: 3
 exemptLabels:
-    - "Priority: Critical"
-    - "Priority: High"
+    - "Priority: 0 Critical"
+    - "Priority: 1 High"
+    - "Priority: 2 Medium"
+    - "Priority: 3 Low"
     - "State: Help Wanted"
     - "State: Work in Progress"
     - "State: Blocked"
     - "State: Postponed"
 staleLabel: 'Meta: Abandoned / No Fix'
 markComment: >
-    This submission has been flagged as abandoned due to lack of activity. Is there something specific that is causing this to be delayed?
+    This submission has been flagged as abandoned due to lack of activity. Is there something specific that is causing this to be delayed? Is this still relevant?
 
     Please leave a comment if this issue has not yet been resolved, otherwise it will be automatically closed in the near future.
 closeComment: >
