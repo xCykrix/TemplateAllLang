@@ -9,7 +9,6 @@ on:
 
 jobs:
   settings-sync:
-    environment: dev
     runs-on: "ubuntu-latest"
     steps:
       - name: "Settings Sync"
