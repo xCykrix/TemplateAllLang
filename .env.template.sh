@@ -1,0 +1,1 @@
+declare -x GH_ACCESS_TOKEN="GITHUB_PAT_HERE";
