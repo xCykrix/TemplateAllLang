@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/deno,gradle,maven,java,visualstudiocode,intellij+all,visualstudio,dotenv
-# Edit at https://www.toptal.com/developers/gitignore?templates=deno,gradle,maven,java,visualstudiocode,intellij+all,visualstudio,dotenv
+### Custom ###
+.env.sh
 
 ### Deno ###
 /.idea/
