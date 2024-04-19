@@ -20,7 +20,7 @@ if [ -z "${SED}" ]; then
 fi
 
 # Determine Repo Slug
-CURRENT_REPO=$(git remote get-url --push origin | sed 's/.*.com//' | sed 's/://' | sed 's/.git//')
+CURRENT_REPO=$(git remote get-url --push origin | sed 's/.*.com\///' | sed 's/://' | sed 's/.git//')
 
 # Call gh_settings_sync from main mod.ts.
 $DENO cache -r https://raw.githubusercontent.com/xCykrix/gh_settings_sync/main/mod.ts
