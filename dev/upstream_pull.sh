@@ -20,10 +20,11 @@ git clone --quiet https://github.com/xCykrix/TemplateAllLang "$TU_GIT" > /dev/nu
 
 # Move Template Files
 cp -rf "./$TU_GIT/.github/" ".";
-cp -r "./$TU_GIT/.editorconfig" ".";
-cp -r "./$TU_GIT/.gitignore" ".";
-cp -r "./$TU_GIT/LICENSE" ".";
-cp -r "./$TU_GIT/make.sh" ".";
+cp -rf "./$TU_GIT/dev/" ".";
+cp -rf "./$TU_GIT/.editorconfig" ".";
+cp -rf "./$TU_GIT/.gitignore" ".";
+cp -rf "./$TU_GIT/LICENSE" ".";
+cp -rf "./$TU_GIT/make.sh" ".";
 
 # Delete Template
 rm -rf "./$TU_GIT";
