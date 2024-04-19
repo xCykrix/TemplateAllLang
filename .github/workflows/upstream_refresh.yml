@@ -19,5 +19,5 @@ jobs:
         run: "sudo snap install deno"
       - name: "Call Script"
         run: "bash dev/upstream_refresh_github.sh"
-        with:
+        env:
           GH_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
