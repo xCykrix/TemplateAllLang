@@ -16,7 +16,7 @@ echo "dev-script(): Applying Upstream 'TemplateAllLang' Update";
 
 # Delete failed sync attempt(s) and initialize template locally.
 rm -rf "./$TU_GIT";
-git clone https://github.com/xCykrix/TemplateAllLang "$TU_GIT";
+git clone --quiet https://github.com/xCykrix/TemplateAllLang "$TU_GIT" > /dev/null;
 
 # Move Template Files
 cp -rf "./$TU_GIT/.github/" ".";
