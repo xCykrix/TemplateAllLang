@@ -26,6 +26,12 @@ cp -rf "./$TU_GIT/.gitignore" "."
 cp -rf "./$TU_GIT/LICENSE" "."
 cp -rf "./$TU_GIT/make.sh" "."
 
+# Generate Base Files
+mkdir -p "./dev/"
+touch "./dev/0.setup.sh"
+touch "./dev/1.build.sh"
+touch "./dev/2.validate.sh"
+
 # Delete Template
 rm -rf "./$TU_GIT"
 

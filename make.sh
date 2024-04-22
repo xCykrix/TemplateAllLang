@@ -4,12 +4,12 @@ TARGETS=();
 TARGETTED=$1;
 
 # Collect & Request Target
-if [ -z "${TARGET}" ]; then
-  for DEV_FILE in ./dev/*; do
-    DEV_FILE=$(echo $DEV_FILE | sed 's/\.\/dev\///' | sed 's/\.sh//');
-    TARGETS+=("$DEV_FILE");
-  done
+for DEV_FILE in ./dev/*; do
+  DEV_FILE=$(echo $DEV_FILE | sed 's/\.\/dev\///' | sed 's/\.sh//');
+  TARGETS+=("$DEV_FILE");
+done
 
+if [ -z "${TARGETTED}" ]; then
   echo "make-script(): select [#]"
   I_CNT_MAKE_1=0;
   for TARGET in ${TARGETS[@]}; do
@@ -21,11 +21,15 @@ fi
 
 # Read Target
 while [ -z "${FTARG}" ]; do
-  read -p "Target [#]: " TARGETTED;
+  if [ -z "${TARGETTED}" ]; then
+    read -p "Target [#]: " TARGETTED;
+  fi
   FTARG=${TARGETS[$TARGETTED]};
 done
 
 # Execute Task
+echo "";
+echo "execute(): './dev/$FTARG.sh';";
 echo "";
 bash ./dev/$FTARG.sh $FTARG;
 
