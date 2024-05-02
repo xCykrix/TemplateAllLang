@@ -22,8 +22,8 @@ labels:
 to implement.
 
 **Current Environment**: Please detail the specs and operating system of the
-machine you are currently using. Please include the version of this project
-that you are using.
+machine you are currently using. Please include the version of this project that
+you are using.
 
 **Additional Context**: Please provide any additional information you feel
 should be shared, if applicable.

@@ -12,14 +12,17 @@ labels:
 
 Please follow responsible disclosure in reporting an issue.
 
-If you have found a critical vulnerability, please open an issue and we will reach out to provide contact information for further discussion. We will require the information below to further address this issue.
+If you have found a critical vulnerability, please open an issue and we will
+reach out to provide contact information for further discussion. We will require
+the information below to further address this issue.
 
 https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/about-coordinated-disclosure-of-security-vulnerabilities#best-practices-for-vulnerability-reporters
 
-Please fill the below information for non-critical concerns. We will reach out requesting this information privately for critical concerns.
+Please fill the below information for non-critical concerns. We will reach out
+requesting this information privately for critical concerns.
 
 **Describe the Concern**: A clear and concise description of what is
-problematic. 
+problematic.
 
 **Information / Steps to Reproduce**:
 
